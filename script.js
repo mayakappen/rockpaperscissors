@@ -1,5 +1,6 @@
 class Player {
   constructor() {
+    this.wins = []
     this.rock = false
     this.paper = false
     this.scissors = false
@@ -29,15 +30,15 @@ class Player {
   }
 };
 
-
-
+var player1 = new Player
+var computer = new Player
+player1.selectPaper();
 class Game {
   constructor() {
-    var player1 = new Player
-    this.userInput = player1.fist
+  this.wins = 0
+  this.userInput = player1.fist
   }
   randomFist() {
-    var computer = new Player
     var input = this.computerInput
       var options = ['rock', 'paper', 'scissors']
       for (var i = 0; i < options.length ; i++) {
@@ -45,16 +46,29 @@ class Game {
         input = randFist
         if (options[input] === 'rock') {
           computer.selectRock();
-
+        }
+          else if (options[input] === 'rock' && player1.fist.paper === true) {
+          computer.selectRock();
         }
         else if (options[input] === 'paper') {
           computer.selectPaper();
+
         }
         else if (options[input] === 'scissors') {
           computer.selectScissors()
         }
-        return computer.fist
 
+  }
+  }
+  shoot() {
+    if ((computer.fist.rock === true && player1.fist.rock === true) || (computer.fist.scissors === true && player1.fist.scissors === true) || (computer.fist.paper === true && player1.fist.paper === true)) {
+      return 'It\'s a Draw!'
+  } else if ((computer.fist.rock === true && player1.fist.scissors === true) || (computer.fist.scissors === true && player1.fist.paper === true) || (computer.fist.paper === true && player1.fist.rock === true)) {
+      computer.wins++
+      return 'You Lose!'
+  } else if ((player1.fist.rock === true && computer.fist.scissors === true) || (player1.fist.scissors === true && computer.fist.paper === true) || (player1.fist.paper === true && computer.fist.rock === true)) {
+      player1.wins++
+      return 'You Win!'
   }
   }
 }
