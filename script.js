@@ -1,6 +1,6 @@
 class Player {
   constructor() {
-    this.wins = []
+    this.wins = 0
     this.rock = false
     this.paper = false
     this.scissors = false
@@ -35,7 +35,6 @@ var computer = new Player
 player1.selectPaper();
 class Game {
   constructor() {
-  this.wins = 0
   this.userInput = player1.fist
   }
   randomFist() {
@@ -71,4 +70,10 @@ class Game {
       return 'You Win!'
   }
   }
+}
+
+function newGame() {
+  var game = new Game
+  game.randomFist();
+  return game.shoot();
 }
