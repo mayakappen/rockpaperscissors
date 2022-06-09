@@ -67,7 +67,7 @@ class Game {
       computer.wins++
       return 'You Lose!'
   } else if ((player1.fist.rock === true && computer.fist.scissors === true) || (player1.fist.scissors === true && computer.fist.paper === true) || (player1.fist.paper === true && computer.fist.rock === true)) {
-      this.wins++
+      player1.wins++
       return 'You Win!'
   }
   }
