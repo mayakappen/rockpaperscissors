@@ -1,3 +1,8 @@
+var playButton = document.getElementById('play')
+var rockButton = document.getElementById('select-rock')
+var paperButton = document.getElementById('select-paper')
+var scissorsButton = document.getElementById('select-scissors')
+var area = document.querySelector('.display')
 class Player {
   constructor() {
     this.wins = 0
@@ -14,28 +19,24 @@ class Player {
     this.fist.rock = true
     this.fist.paper = false
     this.fist.scissors = false
-    return this.fist
   }
   selectPaper() {
     this.fist.paper = true
     this.fist.rock = false
     this.fist.scissors = false
-    return this.fist
   }
   selectScissors() {
     this.fist.scissors = true
     this.fist.paper = false
     this.fist.rock = false
-    return this.fist
-  }
+}
 };
 
 var player1 = new Player
 var computer = new Player
-player1.selectPaper();
+
 class Game {
   constructor() {
-  this.userInput = player1.fist
   }
   randomFist() {
     var input = this.computerInput
@@ -66,14 +67,37 @@ class Game {
       computer.wins++
       return 'You Lose!'
   } else if ((player1.fist.rock === true && computer.fist.scissors === true) || (player1.fist.scissors === true && computer.fist.paper === true) || (player1.fist.paper === true && computer.fist.rock === true)) {
-      player1.wins++
+      this.wins++
       return 'You Win!'
   }
   }
 }
 
+
+
+function selectRock() {
+  player1.selectRock();
+  return player1
+}
+
+function selectPaper() {
+  player1.selectPaper();
+  return player1
+}
+
+function selectScissors() {
+  player1.selectScissors();
+  return player1
+}
+
+
 function newGame() {
   var game = new Game
   game.randomFist();
-  return game.shoot();
+  area.innerText = game.shoot();
 }
+
+playButton.addEventListener('click', newGame)
+rockButton.addEventListener('click', selectRock)
+paperButton.addEventListener('click', selectPaper)
+scissorsButton.addEventListener('click', selectScissors)
