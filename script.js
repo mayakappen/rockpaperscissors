@@ -2,7 +2,8 @@ var playButton = document.getElementById('play')
 var rockButton = document.getElementById('select-rock')
 var paperButton = document.getElementById('select-paper')
 var scissorsButton = document.getElementById('select-scissors')
-var area = document.querySelector('.display')
+var area = document.querySelector('.result')
+
 class Player {
   constructor() {
     this.wins = 0
