@@ -30,7 +30,7 @@ body {
   width: 33vw;
   border: 2px black solid;
   display: flex;
-  flex-direction: column;
+  flex-di\rection: column;
   justify-content: center;
   align-content: space=space-between;
   align-items: stretch;
