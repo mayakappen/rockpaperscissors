@@ -6,6 +6,7 @@ body {
 	justify-content: space-between;
 	align-items: stretch;
 	align-content: space-evenly;
+	background-color: #55BCC9
 }
 
 
@@ -20,13 +21,15 @@ body {
 }
 
 .wincount {
-  height: 100vh;
+  height: 85vh;
   width: 25vw;
   border: 2px black solid;
+	background-color: #97CAEF;
+	border-radius: 5vw;
 }
 
 .display {
-  height: 100vh;
+  height: 85vh;
   width: 40vw;
   border: 2px black solid;
   display: flex;
@@ -35,6 +38,9 @@ body {
   align-content: space-around;
   align-items: stretch;
   flex-wrap: wrap;
+	background-color: #3FEEE6;
+	border-radius: 5vw;
+	margin: 4vw
 }
 
 .buttons {
