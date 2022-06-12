@@ -21,4 +21,3 @@ Computer Images:
 ![computerscissors](https://user-images.githubusercontent.com/102932448/173165450-5bce8ab9-dc00-4ada-a642-a8a309d8cc58.png)
 
 ![computerpaper](https://user-images.githubusercontent.com/102932448/173165473-21dd088f-ba54-4d80-b580-a472ffacefcf.png)
-ß

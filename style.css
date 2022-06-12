@@ -13,46 +13,53 @@ body {
 .wrapper {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: stretch;
-	align-content: space-evenly;
+	align-items: center;
+	align-content: space-between;
 }
 
 .wincount {
-  height: 66vh;
-  width: 33vw;
+  height: 100vh;
+  width: 25vw;
   border: 2px black solid;
 }
 
 .display {
-  height: 66vh;
-  width: 33vw;
+  height: 100vh;
+  width: 40vw;
   border: 2px black solid;
   display: flex;
-  flex-di\rection: column;
+  flex-direction: column;
   justify-content: center;
-  align-content: space=space-between;
+  align-content: space-around;
   align-items: stretch;
   flex-wrap: wrap;
 }
 
-
 .buttons {
   height: 10vh;
-  width: 10vw;
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  align-content: space-evenly;
-  justify-content: space-between
+  width: 10vh;
+	align-self: stretch;
 }
 
 .result {
-  height: 10vh;
-  width: 10vh;
-  display: flex;
-  flex-direction: row;
+  height: 30vh;
+  width: 30vh;
   align-self: center;
-  font-size: 10vh;
+	align-content: space-around;
+  font-size: 8vh;
+	font-stretch: expanded;
+	border: 2px black solid;
+	margin: 2vh
+}
+
+#player-hand {
+	height: 10vh;
+	width: 10vh;
+}
+
+#computer-hand {
+	height: 10vh;
+	width: 10vh;
 }
