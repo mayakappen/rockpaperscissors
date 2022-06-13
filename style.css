@@ -1,14 +1,32 @@
 
 body {
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: stretch;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
 	align-content: space-evenly;
 	background-color: #55BCC9
 }
 
+.display {
+	height: 85vh;
+	width: 45vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: space-around;
+	align-items: center;
+	flex-wrap: nowrap;
+	background-color: #3FEEE6;
+	border-radius: 5vw;
+	margin-left: 1.3vw;
+}
+
+
+.hidden {
+	display: none;
+}
 
 
 .wrapper {
@@ -17,7 +35,6 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	align-content: space-between;
 }
 
 .wincount {
@@ -27,36 +44,26 @@ body {
 	border-radius: 5vw;
 }
 
-.display {
-  height: 85vh;
-  width: 40vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: space-around;
-  align-items: stretch;
-  flex-wrap: wrap;
-	background-color: #3FEEE6;
-	border-radius: 5vw;
-	margin: 2vw
+.view-display {
+
 }
 
-.buttons {
-  height: 10vh;
-  width: 10vh;
-	align-self: stretch;
+.view-winner {
+
 }
+
+
 
 .result {
 	background-color: #CAFAFE;
   height: 35vh;
   width: 35vh;
 	border: 2px black solid;
-	margin: 2vh;
+
 	margin-top: 4vh;
 	border-radius: 5vw;
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
@@ -73,6 +80,12 @@ body {
 	color: #CAFAFE;
 	border-color: #FC4445;
 	border-radius: 5vw;
+}
+
+#play:hover {
+	cursor: pointer;
+	background-color: #97CAEF;
+	border-color: #97CAEF;
 }
 
 #result-text {
@@ -92,4 +105,31 @@ body {
 	height: 12vh;
 	width: auto;
 	margin-bottom: 2vh;
+}
+
+#select-rock {
+}
+
+#select-rock:hover {
+cursor: pointer;
+height: 8vh;
+width: 8vh;
+}
+
+#select-paper{
+}
+
+#select-paper:hover {
+	cursor: pointer;
+	height: 8vh;
+	width: 8vh;
+}
+
+#select-scissors{
+}
+
+#select-scissors:hover {
+	cursor: pointer;
+	height: 8vh;
+	width: 8vh;
 }

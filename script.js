@@ -1,3 +1,5 @@
+var display = document.querySelector('.view-display')
+var viewWinner = document.querySelector('.view-winner')
 
 var playButton = document.getElementById('play')
 var rockButton = document.getElementById('select-rock')
@@ -17,6 +19,11 @@ var computerImages = ['<img src="https://user-images.githubusercontent.com/10293
                       '<img src="https://user-images.githubusercontent.com/102932448/173165473-21dd088f-ba54-4d80-b580-a472ffacefcf.png" alt="computerPaper" width="100" height="100">',]
 
 
+
+function switchViews() {
+  display.classList.toggle('hidden');
+  viewWinner.classList.toggle('hidden');
+}
 function selectRock() {
   game.player1.selectRock();
   playerHand.innerHTML = playerImages[0];
@@ -35,8 +42,9 @@ function selectScissors() {
 function newGame() {
   game.randomFist();
   area.innerText = game.shoot();
+  switchViews();
+  window.setTimeout(switchViews, 2500)
 }
-
 
 playButton.addEventListener('click', newGame)
 rockButton.addEventListener('click', selectRock)
