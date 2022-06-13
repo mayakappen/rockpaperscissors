@@ -27,4 +27,9 @@ class Player {
     this.fist.paper = false
     this.fist.rock = false
 }
+  selectEmpty() {
+    this.fist.rock = false
+    this.fist.paper = false
+    this.fist.scissors = false
+  }
 };
