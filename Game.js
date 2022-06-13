@@ -42,6 +42,5 @@ class Game {
       this.player1.wins++
       return 'You Win!'
   }
-  this.player1.selectEmpty();
   }
 }
