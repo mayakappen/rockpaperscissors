@@ -30,15 +30,19 @@ class Game {
   }
   shoot() {
     if ((this.computer.fist.rock === true && this.player1.fist.rock === true) || (this.computer.fist.scissors === true && this.player1.fist.scissors === true) || (this.computer.fist.paper === true && this.player1.fist.paper === true)) {
+      this.player1.resetFist();
       return 'It\'s a Draw!'
   } else if ((this.computer.fist.rock === true && this.player1.fist.scissors === true) || (this.computer.fist.scissors === true && this.player1.fist.paper === true) || (this.computer.fist.paper === true && this.player1.fist.rock === true)) {
       this.computer.wins++
+      this.player1.resetFist()
       return 'You Lose!'
   } else if ((this.player1.fist.rock === true && this.computer.fist.scissors === true) || (this.player1.fist.scissors === true && this.computer.fist.paper === true) || (this.player1.fist.paper === true && this.computer.fist.rock === true)) {
       this.player1.wins++
+      this.player1.resetFist();
       return 'You Win!'
   }
   else {
+    this.player1.resetFist();
     this.computer.wins++
     return 'Select an Option!'
   }

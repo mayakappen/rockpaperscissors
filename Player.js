@@ -27,4 +27,9 @@ class Player {
     this.fist.paper = false
     this.fist.rock = false
 }
+resetFist() {
+  this.fist.scissors = false
+  this.fist.paper = false
+  this.fist.rock = false
+}
 };
