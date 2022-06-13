@@ -23,7 +23,6 @@ body {
 .wincount {
   height: 85vh;
   width: 25vw;
-  border: 2px black solid;
 	background-color: #97CAEF;
 	border-radius: 5vw;
 }
@@ -31,7 +30,6 @@ body {
 .display {
   height: 85vh;
   width: 40vw;
-  border: 2px black solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +38,7 @@ body {
   flex-wrap: wrap;
 	background-color: #3FEEE6;
 	border-radius: 5vw;
-	margin: 4vw
+	margin: 2vw
 }
 
 .buttons {
@@ -50,22 +48,48 @@ body {
 }
 
 .result {
-  height: 30vh;
-  width: 30vh;
-  align-self: center;
-	align-content: space-around;
-  font-size: 8vh;
-	font-stretch: expanded;
+	background-color: #CAFAFE;
+  height: 35vh;
+  width: 35vh;
 	border: 2px black solid;
-	margin: 2vh
+	margin: 2vh;
+	margin-top: 4vh;
+	border-radius: 5vw;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#play {
+	font-family: 'Varela Round', sans-serif;
+	margin-top: 3vh;
+	width: 7vw;
+	height: 4vh;
+	align-self: center;
+	background-color: #FC4445;
+	color: #CAFAFE;
+	border-color: #FC4445;
+	border-radius: 5vw;
+}
+
+#result-text {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 10vh;
+	align-self: center;
+	margin-left: 3.8vw;
 }
 
 #player-hand {
-	height: 10vh;
-	width: 10vh;
+	height: 12vh;
+	width: auto;
+	margin-bottom: 2vh;
 }
 
 #computer-hand {
-	height: 10vh;
-	width: 10vh;
+	height: 12vh;
+	width: auto;
+	margin-bottom: 2vh;
 }

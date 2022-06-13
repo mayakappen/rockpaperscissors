@@ -38,5 +38,9 @@ class Game {
       this.player1.wins++
       return 'You Win!'
   }
+  else {
+    this.computer.wins++
+    return 'Select an Option!'
+  }
   }
 }

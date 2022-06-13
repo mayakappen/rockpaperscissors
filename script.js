@@ -5,7 +5,7 @@ var paperButton = document.getElementById('select-paper')
 var scissorsButton = document.getElementById('select-scissors')
 var playerHand = document.getElementById('player-hand')
 var computerHand = document.getElementById('computer-hand')
-var area = document.querySelector('.result')
+var area = document.getElementById('result-text')
 var game = new Game
 
 var playerImages = ['<img src="https://user-images.githubusercontent.com/102932448/173165388-7a044f50-061d-4825-bfa6-5cc643998362.png" alt="playerRock" width="100" height="100">',
