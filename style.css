@@ -12,16 +12,16 @@ body {
 .display {
 	height: 85vh;
 	width: 45vw;
+	background-color: #3FEEE6;
+	border-radius: 5vw;
+	border-color: #55BCC9;
+	margin: 1vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-content: space-around;
 	align-items: center;
-	flex-wrap: wrap;
-	background-color: #3FEEE6;
-	border-radius: 5vw;
-	border-color: #55BCC9;
-	margin: 1vw;
+	flex-wrap: nowrap;
 }
 
 
@@ -56,14 +56,10 @@ body {
 }
 
 .view-display {
-
 }
 
 .view-winner {
-
 }
-
-
 
 .result {
 	background-color: #CAFAFE;
@@ -77,15 +73,15 @@ body {
 	justify-content: center;
 	align-self: center;
 	align-items: center;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
 #play {
 	font-family: 'Varela Round', sans-serif;
-	margin-top: 3vh;
+	margin-top: 10vh;
+	margin-left: 10vw;
 	width: 7vw;
 	height: 4vh;
-	align-self: center;
 	background-color: #FC4445;
 	color: #CAFAFE;
 	border-color: #FC4445;
