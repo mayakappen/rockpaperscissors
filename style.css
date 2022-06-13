@@ -78,7 +78,7 @@ body {
 
 .wincount-text {
 	font-family: 'Varela Round', sans-serif;
-	font-size: 10vh;
+	font-size: 8vh;
 	color: #CAFAFE;
 }
 
@@ -130,7 +130,11 @@ body {
 cursor: pointer;
 height: 14vh;
 width: auto;
+}
 
+#select-rock:checked {
+	height: 14vh;
+	width: auto;
 }
 
 #select-paper{
