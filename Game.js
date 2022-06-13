@@ -14,15 +14,15 @@ class Game {
         var randFist = Math.floor(Math.random() * options.length)
         input = randFist
         if (options[input] === 'rock') {
-          this.computer.selectRock();
+          this.computer.rock = true
           computerHand.innerHTML = computerImages[0]
         }
         else if (options[input] === 'paper') {
-          this.computer.selectPaper();
+          this.computer.paper = true
           computerHand.innerHTML = computerImages[2]
         }
         else if (options[input] === 'scissors') {
-          this.computer.selectScissors()
+          this.computer.scissors = true
           computerHand.innerHTML = computerImages[1]
         }
 
@@ -33,7 +33,7 @@ class Game {
       this.computer.wins++
       return 'Select an Option!'
     }
-    if ((this.computer.rock === true && this.player1.rock === true) || (this.computer.scissors === true && this.player1.scissors === true) || (this.computer.paper === true && this.player1.paper === true)) {
+    else if ((this.computer.rock === true && this.player1.rock === true) || (this.computer.scissors === true && this.player1.scissors === true) || (this.computer.paper === true && this.player1.paper === true)) {
       return 'It\'s a Draw!'
   } else if ((this.computer.rock === true && this.player1.scissors === true) || (this.computer.scissors === true && this.player1.paper === true) || (this.computer.paper === true && this.player1.rock === true)) {
       this.computer.wins++
