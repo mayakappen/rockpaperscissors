@@ -76,6 +76,14 @@ body {
 	flex-wrap: nowrap;
 }
 
+.wincount-text {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 10vh;
+	color: #CAFAFE;
+}
+
+
+
 #play {
 	font-family: 'Varela Round', sans-serif;
 	margin-top: 10vh;

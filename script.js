@@ -7,6 +7,8 @@ var scissorsButton = document.getElementById('select-scissors')
 var playerHand = document.getElementById('player-hand')
 var computerHand = document.getElementById('computer-hand')
 var area = document.getElementById('result-text')
+var playerScore = document.getElementById('player-wincount')
+var computerScore = document.getElementById('computer-wincount')
 var game = new Game
 
 var playerImages = ['<img src="https://user-images.githubusercontent.com/102932448/173165388-7a044f50-061d-4825-bfa6-5cc643998362.png" alt="playerRock" width="100" height="100">',
@@ -48,6 +50,8 @@ function newGame() {
     playerHand.innerHTML = playerImages[3]
   }
   switchViews();
+  playerScore.innerText = `Wins: ${game.player1.wins}`
+  computerScore.innerText =`Wins: ${game.computer.wins}`
   window.setTimeout(switchViews, 2500)
   game.player1.selectEmpty()
 }
