@@ -6,7 +6,6 @@ class Player {
     this.rock = false
     this.paper = false
     this.scissors = false
-
   }
   selectRock() {
     this.rock = true
