@@ -50,6 +50,7 @@ function newGame() {
   }
   switchViews();
   window.setTimeout(switchViews, 2500)
+  game.player1.selectEmpty()
 }
 
 playButton.addEventListener('click', newGame)
