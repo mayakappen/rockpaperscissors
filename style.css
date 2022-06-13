@@ -63,7 +63,20 @@ body {
 	flex-wrap: wrap;
 }
 
+#play {
+	font-family: 'Varela Round', sans-serif;
+	margin-top: 3vh;
+	width: 7vw;
+	height: 4vh;
+	align-self: center;
+	background-color: #FC4445;
+	color: #CAFAFE;
+	border-color: #FC4445;
+	border-radius: 5vw;
+}
+
 #result-text {
+	font-family: 'Varela Round', sans-serif;
 	font-size: 10vh;
 	align-self: center;
 	margin-left: 3.8vw;
