@@ -13,3 +13,10 @@ Computer Images:
 ![computerscissors](https://user-images.githubusercontent.com/102932448/173165450-5bce8ab9-dc00-4ada-a642-a8a309d8cc58.png)
 
 ![computerpaper](https://user-images.githubusercontent.com/102932448/173165473-21dd088f-ba54-4d80-b580-a472ffacefcf.png)
+
+Hover Images:
+![rockHover](https://user-images.githubusercontent.com/102932448/173261099-55f59bf8-1266-487a-a16e-34aa7b234887.png)
+
+![paperHover](https://user-images.githubusercontent.com/102932448/173261154-5659e6f4-4b19-4a52-ace7-8d12e8265c86.png)
+
+![scissorsHover](https://user-images.githubusercontent.com/102932448/173261219-2167a652-c912-4891-9733-4b69af164e44.png)
