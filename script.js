@@ -1,6 +1,5 @@
 var display = document.querySelector('.view-display')
 var viewWinner = document.querySelector('.view-winner')
-
 var playButton = document.getElementById('play')
 var rockButton = document.getElementById('select-rock')
 var paperButton = document.getElementById('select-paper')

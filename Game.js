@@ -29,16 +29,16 @@ class Game {
       }
   }
   shoot() {
-    if (this.player1.fist.rock === false && this.player1.fist.paper === false && this.player1.fist.scissors === false) {
+    if (this.player1.rock === false && this.player1.paper === false && this.player1.scissors === false) {
       this.computer.wins++
       return 'Select an Option!'
     }
-    if ((this.computer.fist.rock === true && this.player1.fist.rock === true) || (this.computer.fist.scissors === true && this.player1.fist.scissors === true) || (this.computer.fist.paper === true && this.player1.fist.paper === true)) {
+    if ((this.computer.rock === true && this.player1.rock === true) || (this.computer.scissors === true && this.player1.scissors === true) || (this.computer.paper === true && this.player1.paper === true)) {
       return 'It\'s a Draw!'
-  } else if ((this.computer.fist.rock === true && this.player1.fist.scissors === true) || (this.computer.fist.scissors === true && this.player1.fist.paper === true) || (this.computer.fist.paper === true && this.player1.fist.rock === true)) {
+  } else if ((this.computer.rock === true && this.player1.scissors === true) || (this.computer.scissors === true && this.player1.paper === true) || (this.computer.paper === true && this.player1.rock === true)) {
       this.computer.wins++
       return 'You Lose!'
-  } else if ((this.player1.fist.rock === true && this.computer.fist.scissors === true) || (this.player1.fist.scissors === true && this.computer.fist.paper === true) || (this.player1.fist.paper === true && this.computer.fist.rock === true)) {
+  } else if ((this.player1.rock === true && this.computer.scissors === true) || (this.player1.scissors === true && this.computer.paper === true) || (this.player1.paper === true && this.computer.rock === true)) {
       this.player1.wins++
       return 'You Win!'
   }
