@@ -57,8 +57,9 @@ function displayPlayer() {
 } else if (game.player1.scissors === true) {
   playerHand.innerHTML = playerImages[1]
 } else if (game.player1.peace === true) {
-  playerHand.innerHTML = playerImages[3]
+  playerHand.innerHTML = playerImages[5]
 } else if (game.player1.hang === true)
+  playerHand.innerHTML = playerImages[4]
 }
 
 function selection(event) {
@@ -73,7 +74,7 @@ function selection(event) {
   selectArea.innerText = 'Scissors!'
   game.player1.takeTurn('scissors')
 } else if (event.target === hangButton) {
-  selectArea.innerText = 'Groovy!'
+  selectArea.innerText = 'Gnar!'
   game.player1.takeTurn('hang')
 } else if (event.target === peaceButton) {
   selectArea.innerText = 'Peace!'

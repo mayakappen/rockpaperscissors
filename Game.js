@@ -9,7 +9,8 @@ class Game {
   randomFistNormal() {
     var input = this.computerInput
     var options = ['rock', 'paper', 'scissors']
-    for (var i = 0; i < options.length; i++) {
+
+
       var randFist = Math.floor(Math.random() * options.length)
       input = randFist
         if (options[input] === 'rock') {
@@ -24,12 +25,13 @@ class Game {
         this.computer.takeTurn('scissors')
           computerHand.innerHTML = computerImages[1]
         }
-      }
+      
   }
   randomFistExtra() {
+    this.computer.selectEmpty()
     var input = this.computerInput
     var options = ['rock', 'paper', 'scissors', 'peace', 'hang']
-    for (var i = 0; i < options.length; i++) {
+
       var randFist = Math.floor(Math.random() * options.length)
       input = randFist
         if (options[input] === 'rock') {
@@ -46,13 +48,13 @@ class Game {
         }
         else if (options[input] === 'peace') {
         this.computer.takeTurn('peace')
-        computerHand.innerHTML = computerImages[3]
+        computerHand.innerHTML = computerImages[4]
         }
         else if (options[input] === 'hang') {
         this.computer.takeTurn('hang')
-        computerHand.innerHTML = computerImages[4]
+        computerHand.innerHTML = computerImages[3]
         }
-      }
+
   }
   shootNormal() {
     if (this.player1.rock === false && this.player1.paper === false && this.player1.scissors === false) {
@@ -79,10 +81,11 @@ class Game {
   } else if ((this.computer.rock === true && (this.player1.scissors === true || this.player1.hang === true)) || (this.computer.scissors === true && (this.player1.paper === true || this.player1.hang === true)) || (this.computer.paper === true && (this.player1.rock === true || this.player1.peace === true)) || (this.computer.hang === true && (this.player1.paper === true || this.player1.peace === true)) || (this.computer.peace === true && (this.player1.scissors === true || this.player1.rock === true))) {
       this.computer.wins++
       return 'You Lose!'
-  } else if ((this.player1.rock === true && (this.computer.scissors === true || this.computer.hang === true)) || (this.player1.scissors === true && (this.computer.paper === true || this.computer.hang === true)) || (this.this.player1.paper === true && (this.computer.rock === true || this.computer.peace === true)) || (this.player1.hang === true && (this.computer.paper === true || this.computer.peace === true)) || (this.player1.peace === true && (this.computer.scissors === true || this.computer.rock === true)))  {
+  } else if ((this.player1.rock === true && (this.computer.scissors === true || this.computer.hang === true)) || (this.player1.scissors === true && (this.computer.paper === true || this.computer.hang === true)) || (this.player1.paper === true && (this.computer.rock === true || this.computer.peace === true)) || (this.player1.hang === true && (this.computer.paper === true || this.computer.peace === true)) || (this.player1.peace === true && (this.computer.scissors === true || this.computer.rock === true)))  {
       this.player1.wins++
       return 'You Win!'
   }
+  this.computer.selectEmpty();
 }
   newGameNormal() {
     this.randomFistNormal();
@@ -95,6 +98,7 @@ class Game {
   }
 
   newGameExtra() {
+    this.computer.selectEmpty()
     this.randomFistExtra();
     resultArea.innerText = this.shootExtra();
     seeWinner();
