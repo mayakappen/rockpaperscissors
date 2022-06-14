@@ -100,7 +100,7 @@ class Game {
     seeWinner();
     playerScore.innerText = `Wins: ${this.player1.wins}`
     computerScore.innerText =`Wins: ${this.computer.wins}`
-    window.setTimeout(switchViews, 2500)
+    window.setTimeout(seeWinner, 2500)
     this.player1.selectEmpty();
   }
 }
