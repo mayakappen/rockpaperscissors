@@ -8,21 +8,21 @@ class Game {
 
   }
   randomFist() {
-    var input = this.computerInput
+      var input = this.computerInput
       var options = ['rock', 'paper', 'scissors']
       for (var i = 0; i < options.length; i++) {
-        var randFist = Math.floor(Math.random() * options.length)
-        input = randFist
+      var randFist = Math.floor(Math.random() * options.length)
+      input = randFist
         if (options[input] === 'rock') {
-          this.computer.rock = true
+          this.computer.takeTurn('rock')
           computerHand.innerHTML = computerImages[0]
         }
         else if (options[input] === 'paper') {
-          this.computer.paper = true
+          this.computer.takeTurn('paper')
           computerHand.innerHTML = computerImages[2]
         }
         else if (options[input] === 'scissors') {
-          this.computer.scissors = true
+        this.computer.takeTurn('scissors')
           computerHand.innerHTML = computerImages[1]
         }
 

@@ -9,7 +9,6 @@ var computerHand = document.getElementById('computer-hand')
 var area = document.getElementById('result-text')
 var playerScore = document.getElementById('player-wincount')
 var computerScore = document.getElementById('computer-wincount')
-var options = document.getElementsByTagName('img')
 var game = new Game
 var playerImages = ['<img src="https://user-images.githubusercontent.com/102932448/173165388-7a044f50-061d-4825-bfa6-5cc643998362.png" alt="playerRock" width="100" height="100">',
                     '<img src="https://user-images.githubusercontent.com/102932448/173165403-4c91229e-49de-4c71-a384-6466e1f5d163.png" alt="playerScissors" width="100" height="100">',
@@ -41,7 +40,7 @@ function displayPlayer() {
 }
 }
 
-function takeTurn(event) {
+function selection(event) {
   if (event.target === rockButton) {
   game.player1.takeTurn('rock')
 } else if (event.target === paperButton) {
@@ -56,16 +55,15 @@ displayPlayer()
 
 
 function newGame() {
-  game.computer.selectEmpty()
-  game.randomFist();
-  area.innerText = game.shoot();
-  switchViews();
-  playerScore.innerText = `Wins: ${game.player1.wins}`
-  computerScore.innerText =`Wins: ${game.computer.wins}`
-  window.setTimeout(switchViews, 2500)
-  game.player1.selectEmpty()
+game.randomFist();
+area.innerText = game.shoot();
+switchViews();
+playerScore.innerText = `Wins: ${game.player1.wins}`
+computerScore.innerText =`Wins: ${game.computer.wins}`
+window.setTimeout(switchViews, 2500)
 }
 
-rockButton.addEventListener('click', takeTurn)
-paperButton.addEventListener('click', takeTurn)
-scissorsButton.addEventListener('click', takeTurn)
+playButton.addEventListener('click', newGame)
+rockButton.addEventListener('click', selection)
+paperButton.addEventListener('click', selection)
+scissorsButton.addEventListener('click', selection)
