@@ -1,8 +1,10 @@
+var home = document.querySelector('.view-home')
 var display = document.querySelector('.view-display')
-var displayExtra = document.querySelector('.view-display-extra')
 var viewWinner = document.querySelector('.view-winner')
-var playButton = document.getElementById('play-normal')
-var playExtraButton = document.getElementById('play-extra')
+var homeButton = document.getElementById('back-home')
+var normalButton = document.getElementById('normal-mode')
+var spicyButton = document.getElementById('spicy-mode')
+var playButton = document.getElementById('play')
 var rockButton = document.getElementById('select-rock')
 var paperButton = document.getElementById('select-paper')
 var scissorsButton = document.getElementById('select-scissors')
@@ -16,7 +18,7 @@ var playerScore = document.getElementById('player-wincount')
 var computerScore = document.getElementById('computer-wincount')
 var playerInfo = document.getElementById('player-info')
 var computerInfo = document.getElementById('computer-info')
-var game = new Game(['rock', 'paper', 'scissors'])
+var game = new Game([])
 
 playerInfo.innerText = game.player1.name + " " + game.player1.token
 computerInfo.innerText = game.computer.name + " " + game.computer.token
@@ -84,13 +86,34 @@ displayPlayer()
 }
 
 
+function switchView() {
+  home.classList.toggle('hidden')
+  display.classList.toggle('hidden')
+  homeButton.classList.toggle('hidden')
+
+}
+function normalGame() {
+game = new Game(['rock', 'paper', 'scissors'])
+switchView()
+}
+
+function spicyGame() {
+switchView()
+peaceButton.classList.toggle('hidden')
+hangButton.classList.toggle('hidden')
+game = new Game(['rock', 'paper', 'scissors', 'hang', 'peace'])
+}
 
 function newGame() {
   game.newGame();
 }
 
+
+
+homeButton.addEventListener('click', switchView )
+normalButton.addEventListener('click', normalGame)
+spicyButton.addEventListener('click', spicyGame)
 playButton.addEventListener('click', newGame)
-//playExtraButton.addEventListener('click', newExtraGame)
 rockButton.addEventListener('click', selection)
 paperButton.addEventListener('click', selection)
 scissorsButton.addEventListener('click', selection)
