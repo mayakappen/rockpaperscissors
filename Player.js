@@ -12,18 +12,23 @@ class Player {
     this.peace = false
   }
   takeTurn(selection) {
-    this.selectEmpty()
     if (selection === 'rock') {
       this.rock = true
     } else if (selection === 'paper') {
       this.paper = true
     } else if (selection === 'scissors') {
       this.scissors = true
+    } else if (selection === 'hang') {
+      this.hang = true
+    } else if (selection === 'peace') {
+      this.peace = true
     }
   }
    selectEmpty() {
    this.rock = false
    this.paper = false
    this.scissors = false
+   this.hang = false
+   this.peace = false
   }
  };
