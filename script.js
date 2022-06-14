@@ -18,7 +18,7 @@ var playerScore = document.getElementById('player-wincount')
 var computerScore = document.getElementById('computer-wincount')
 var playerInfo = document.getElementById('player-info')
 var computerInfo = document.getElementById('computer-info')
-var game = new Game([])
+var game = new Game()
 
 playerInfo.innerText = game.player1.name + " " + game.player1.token
 computerInfo.innerText = game.computer.name + " " + game.computer.token
@@ -90,10 +90,10 @@ function switchView() {
   home.classList.toggle('hidden')
   display.classList.toggle('hidden')
   homeButton.classList.toggle('hidden')
-
 }
+
 function normalGame() {
-game = new Game(['rock', 'paper', 'scissors'])
+game.toggleGameMode('normal')
 switchView()
 }
 
@@ -101,7 +101,7 @@ function spicyGame() {
 switchView()
 peaceButton.classList.toggle('hidden')
 hangButton.classList.toggle('hidden')
-game = new Game(['rock', 'paper', 'scissors', 'hang', 'peace'])
+game.toggleGameMode('spicy')
 }
 
 function newGame() {
