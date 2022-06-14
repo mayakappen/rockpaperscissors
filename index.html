@@ -14,29 +14,33 @@
           <section class="wincount-text" id ="player-wincount">Wins: 0</section> </div>
           <section class = "display">
           <section class="view view-display">
-            <section class="hand-wrapper">
-            <img src="https://user-images.githubusercontent.com/102932448/173165388-7a044f50-061d-4825-bfa6-5cc643998362.png" id="select-rock">
-            <img src="https://user-images.githubusercontent.com/102932448/173165418-88691139-4719-4540-9eb1-9fcb94324fd3.png" id="select-paper">
-            <img src="https://user-images.githubusercontent.com/102932448/173165403-4c91229e-49de-4c71-a384-6466e1f5d163.png" id="select-scissors">
+            <section class="smallWrapper">
+            <section class="text" id="display-text">Rock Paper Scissors!</section>
+          </section>
+            <section class="smallWrapper">
+            <img src="https://user-images.githubusercontent.com/102932448/173165388-7a044f50-061d-4825-bfa6-5cc643998362.png" class="select" id="select-rock">
+            <img src="https://user-images.githubusercontent.com/102932448/173165418-88691139-4719-4540-9eb1-9fcb94324fd3.png" class="select" id="select-paper">
+            <img src="https://user-images.githubusercontent.com/102932448/173165403-4c91229e-49de-4c71-a384-6466e1f5d163.png" class="select" id="select-scissors">
           </section>
           <button id="play">Go!</button>
-      </section>
+          </section>
         <section class="view view-winner hidden">
-          <section class ="wrapper">
-          <div id="player-hand">
-        </div>
-          <div id="computer-hand">
-        </div>
-        </section>
-          <div class ="result">
-            <section id="result-text">
-            </section>
+          <section class="text" id="result-text">
+          </section>
+
+            <section class ="smallWrapper">
+            <div id="player-hand">
           </div>
+            <div id="computer-hand">
+          </div>
+        </section>
+
       </section>
     </section>
       <div class="wincount" id="computer-wins">
         <section class = "info" id="computer-info"></section>
       <section class="wincount-text" id="computer-wincount">Wins: 0</section> </div>
+  </section>
   </section>
   </body>
   <script src="Game.js"></script>

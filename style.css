@@ -38,7 +38,7 @@ body {
 	align-items: center;
 }
 
-.hand-wrapper {
+.smallWrapper {
 	height: 10vh;
 	width: 30vw;
 	display: flex;
@@ -46,6 +46,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: stretch;
+
 }
 
 .wincount {
@@ -62,6 +63,8 @@ body {
 }
 
 .view-display {
+	background-color: #97CAEF;
+	border-radius: 4vw;
 }
 
 .view-winner {
@@ -94,6 +97,26 @@ body {
 	color: #CAFAFE;
 }
 
+.select {
+
+}
+
+.select:active {
+	border: 2px solid #FC4445;
+	background-color: #FC4445;
+	border-radius: 5vw;
+}
+
+.text {
+		font-family: 'Varela Round', sans-serif;
+		font-size: 6vh;
+		align-self: center;
+		margin-left: 3vw;
+		margin-bottom: 5vh;
+		color: #FC4445;
+		padding: 1px
+}
+
 
 #play {
 	font-family: 'Varela Round', sans-serif;
@@ -104,32 +127,28 @@ body {
 	background-color: #FC4445;
 	color: #CAFAFE;
 	border-color: #FC4445;
-	border-radius: 5vw;
+	border-radius: 4vw;
 }
 
 #play:hover {
 	cursor: pointer;
-	background-color: #97CAEF;
-	border-color: #97CAEF;
+	background-color: #55BCC9 ;
+	border-color: #55BCC9;
+
 }
 
-#result-text {
-	font-family: 'Varela Round', sans-serif;
-	font-size: 10vh;
-	align-self: center;
-	margin-left: 3.8vw;
-}
 
 #player-hand {
-	height: 12vh;
+	height: 40px;
 	width: auto;
-	margin-bottom: 2vh;
+	margin-top: 2vh;
 }
 
 #computer-hand {
-	height: 12vh;
-	width: auto;
-	margin-bottom: 2vh;
+height: 40px;
+width: auto;
+margin-top: 2vh;
+
 }
 
 #select-rock {
@@ -166,4 +185,11 @@ width: auto;
 	cursor: pointer;
 	height: 13vh;
 	width: auto;
+}
+
+#display-text {
+	margin-left: 7vw;
+	margin-bottom: 3vh;
+	align-self: center;
+
 }
