@@ -58,7 +58,7 @@ function selection(event) {
   selectArea.innerText = 'Paper!'
 } else if (event.target === scissorsButton) {
   selectArea.innerText = 'Scissors!'
-  selectArea.player1.takeTurn('scissors')
+  game.player1.takeTurn('scissors')
 }
 displayPlayer()
 }
