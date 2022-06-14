@@ -68,6 +68,7 @@ class Game {
       this.player1.wins++
       return 'You Win!'
   }
+}
   shootExtra() {
     if (this.player1.rock === false && this.player1.paper === false && this.player1.scissors === false && this.player1.hang === false && this.player1.peace === false) {
       this.computer.wins++
@@ -86,7 +87,17 @@ class Game {
   newGameNormal() {
     this.randomFist();
     resultArea.innerText = this.shootNormal();
-    switchViews();
+    seeWinner();
+    playerScore.innerText = `Wins: ${this.player1.wins}`
+    computerScore.innerText =`Wins: ${this.computer.wins}`
+    window.setTimeout(switchViews, 2500)
+    this.player1.selectEmpty();
+  }
+
+  newGameExtra() {
+    this.randomFistExtra();
+    resultArea.innerText = this.shootExtra();
+    seeWinner();
     playerScore.innerText = `Wins: ${this.player1.wins}`
     computerScore.innerText =`Wins: ${this.computer.wins}`
     window.setTimeout(switchViews, 2500)

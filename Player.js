@@ -8,6 +8,8 @@ class Player {
     this.rock = false
     this.paper = false
     this.scissors = false
+    this.hang = false
+    this.peace = false
   }
   takeTurn(selection) {
     this.selectEmpty()

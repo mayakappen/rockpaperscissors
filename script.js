@@ -29,9 +29,13 @@ var computerImages = ['<img src="https://user-images.githubusercontent.com/10293
 
 
 
-function switchViews() {
+function seeWinner() {
   display.classList.toggle('hidden');
   viewWinner.classList.toggle('hidden');
+}
+
+function seeWinnerExtra() {
+
 }
 
 function displayPlayer() {
