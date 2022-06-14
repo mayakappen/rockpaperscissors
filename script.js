@@ -30,10 +30,7 @@ function switchViews() {
   viewWinner.classList.toggle('hidden');
 }
 
-
-
 function displayPlayer() {
-  playerHand.innerHTML = playerImages[3]
   if (game.player1.rock === true) {
   playerHand.innerHTML = playerImages[0]
 } else if (game.player1.paper === true) {
@@ -53,9 +50,6 @@ function selection(event) {
 }
 displayPlayer()
 }
-
-
-
 
 function newGame() {
 game.randomFist();

@@ -3,8 +3,8 @@
 // var computer = require('./script.js')
 class Game {
   constructor() {
-    this.player1 = new Player
-    this.computer = new Player
+    this.player1 = new Player('human', '😂')
+    this.computer = new Player('computer', '🤖')
   }
   randomFist() {
     var input = this.computerInput
@@ -29,7 +29,7 @@ class Game {
   shoot() {
     if (this.player1.rock === false && this.player1.paper === false && this.player1.scissors === false) {
       this.computer.wins++
-      playerHand.innerHTML =playerImages[3]
+      playerHand.innerHTML = playerImages[3]
       return 'Select an Option!'
   } else if ((this.computer.rock === true && this.player1.rock === true) || (this.computer.scissors === true && this.player1.scissors === true) || (this.computer.paper === true && this.player1.paper === true)) {
       return 'It\'s a Draw!'
