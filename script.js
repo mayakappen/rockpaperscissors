@@ -1,6 +1,6 @@
 var display = document.querySelector('.view-display')
 var viewWinner = document.querySelector('.view-winner')
-var playButton = document.getElementById('play')
+var playButton = document.getElementById('play-normal')
 var playExtraButton = document.getElementById('play-extra')
 var rockButton = document.getElementById('select-rock')
 var paperButton = document.getElementById('select-paper')
@@ -58,7 +58,7 @@ function selection(event) {
   selectArea.innerText = 'Paper!'
 } else if (event.target === scissorsButton) {
   selectArea.innerText = 'Scissors!'
-  game.player1.takeTurn('scissors')
+  selectArea.player1.takeTurn('scissors')
 }
 displayPlayer()
 }
@@ -72,7 +72,7 @@ function newExtraGame() {
 }
 
 playButton.addEventListener('click', newNormalGame)
-playButton.addEventListener('click', newExtraGame)
+playExtraButton.addEventListener('click', newExtraGame)
 rockButton.addEventListener('click', selection)
 paperButton.addEventListener('click', selection)
 scissorsButton.addEventListener('click', selection)

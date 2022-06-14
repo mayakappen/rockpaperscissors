@@ -76,21 +76,21 @@ class Game {
       return 'Select an Option!'
   } else if ((this.computer.rock === true && this.player1.rock === true) || (this.computer.scissors === true && this.player1.scissors === true) || (this.computer.paper === true && this.player1.paper === true) || (this.computer.peace=== true && this.player1.peace=== true) || (this.computer.hang === true && this.player1.hang === true)) {
       return 'It\'s a Draw!'
-  } else if (((this.computer.rock === true && (this.player1.scissors === true || this.player1.hang === true)) || (this.computer.scissors === true && (this.player1.paper === true || this.player1.hang === true)) || (this.computer.paper === true && (this.player1.rock === true || this.player1.peace === true)) || (this.computer.hang === true && (this.player1.paper === true || this.player1.peace === true)) || (this.computer.peace === true && (this.player1.scissors === true || this.player1.rock === true)))  {
+  } else if ((this.computer.rock === true && (this.player1.scissors === true || this.player1.hang === true)) || (this.computer.scissors === true && (this.player1.paper === true || this.player1.hang === true)) || (this.computer.paper === true && (this.player1.rock === true || this.player1.peace === true)) || (this.computer.hang === true && (this.player1.paper === true || this.player1.peace === true)) || (this.computer.peace === true && (this.player1.scissors === true || this.player1.rock === true))) {
       this.computer.wins++
       return 'You Lose!'
-  } else if (((this.player1.rock === true && (this.computer.scissors === true || this.computer.hang === true)) || (this.player1.scissors === true && (this.computer.paper === true || this.computer.hang === true)) || (this.this.player1.paper === true && (this.computer.rock === true || this.computer.peace === true)) || (this.player1.hang === true && (this.computer.paper === true || this.computer.peace === true)) || (this.player1.peace === true && (this.computer.scissors === true || this.computer.rock === true)))  {
+  } else if ((this.player1.rock === true && (this.computer.scissors === true || this.computer.hang === true)) || (this.player1.scissors === true && (this.computer.paper === true || this.computer.hang === true)) || (this.this.player1.paper === true && (this.computer.rock === true || this.computer.peace === true)) || (this.player1.hang === true && (this.computer.paper === true || this.computer.peace === true)) || (this.player1.peace === true && (this.computer.scissors === true || this.computer.rock === true)))  {
       this.player1.wins++
       return 'You Win!'
   }
 }
   newGameNormal() {
-    this.randomFist();
+    this.randomFistNormal();
     resultArea.innerText = this.shootNormal();
     seeWinner();
     playerScore.innerText = `Wins: ${this.player1.wins}`
     computerScore.innerText =`Wins: ${this.computer.wins}`
-    window.setTimeout(switchViews, 2500)
+    window.setTimeout(seeWinner, 2500)
     this.player1.selectEmpty();
   }
 
