@@ -187,6 +187,29 @@ width: auto;
 	width: auto;
 }
 
+#select-hang {
+height: 14vh;
+width: auto;
+margin-bottom: 2vh
+}
+
+#select-hang:hover {
+	cursor: pointer;
+	height: 16vh;
+	width: auto;
+}
+
+#select-peace {
+height: 14vh;
+width: auto;
+margin-bottom: 2vh;
+}
+
+#select-peace:hover {
+cursor: pointer;
+height: 16vh;
+width: auto;
+}
 #display-text {
 	margin-left: 7vw;
 	margin-bottom: 3vh;

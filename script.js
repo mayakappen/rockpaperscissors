@@ -6,7 +6,7 @@ var paperButton = document.getElementById('select-paper')
 var scissorsButton = document.getElementById('select-scissors')
 var playerHand = document.getElementById('player-hand')
 var computerHand = document.getElementById('computer-hand')
-var displayArea = document.getElementById('result-text')
+var resultArea = document.getElementById('result-text')
 var selectArea = document.getElementById('display-text')
 var playerScore = document.getElementById('player-wincount')
 var computerScore = document.getElementById('computer-wincount')
@@ -29,9 +29,13 @@ var computerImages = ['<img src="https://user-images.githubusercontent.com/10293
 
 
 
-function switchViews() {
+function seeWinner() {
   display.classList.toggle('hidden');
   viewWinner.classList.toggle('hidden');
+}
+
+function seeWinnerExtra() {
+
 }
 
 function displayPlayer() {
@@ -58,17 +62,11 @@ function selection(event) {
 displayPlayer()
 }
 
-function newGame() {
-game.randomFist();
-displayArea.innerText = game.shoot();
-switchViews();
-playerScore.innerText = `Wins: ${game.player1.wins}`
-computerScore.innerText =`Wins: ${game.computer.wins}`
-window.setTimeout(switchViews, 2500)
-game.player1.selectEmpty();
+function newNormalGame() {
+game.newGameNormal();
 }
 
-playButton.addEventListener('click', newGame)
+playButton.addEventListener('click', newNormalGame)
 rockButton.addEventListener('click', selection)
 paperButton.addEventListener('click', selection)
 scissorsButton.addEventListener('click', selection)
