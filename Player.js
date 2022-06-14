@@ -1,7 +1,9 @@
 
 
 class Player {
-  constructor() {
+  constructor(name, token) {
+    this.name = name
+    this.token = token
     this.wins = 0
     this.rock = false
     this.paper = false

@@ -3,14 +3,13 @@
 // var computer = require('./script.js')
 class Game {
   constructor() {
-    this.player1 = new Player
-    this.computer = new Player
-
+    this.player1 = new Player('human', '😂')
+    this.computer = new Player('computer', '🤖')
   }
   randomFist() {
-      var input = this.computerInput
-      var options = ['rock', 'paper', 'scissors']
-      for (var i = 0; i < options.length; i++) {
+    var input = this.computerInput
+    var options = ['rock', 'paper', 'scissors']
+    for (var i = 0; i < options.length; i++) {
       var randFist = Math.floor(Math.random() * options.length)
       input = randFist
         if (options[input] === 'rock') {
@@ -25,15 +24,14 @@ class Game {
         this.computer.takeTurn('scissors')
           computerHand.innerHTML = computerImages[1]
         }
-
       }
   }
   shoot() {
     if (this.player1.rock === false && this.player1.paper === false && this.player1.scissors === false) {
       this.computer.wins++
+      playerHand.innerHTML = playerImages[3]
       return 'Select an Option!'
-    }
-    else if ((this.computer.rock === true && this.player1.rock === true) || (this.computer.scissors === true && this.player1.scissors === true) || (this.computer.paper === true && this.player1.paper === true)) {
+  } else if ((this.computer.rock === true && this.player1.rock === true) || (this.computer.scissors === true && this.player1.scissors === true) || (this.computer.paper === true && this.player1.paper === true)) {
       return 'It\'s a Draw!'
   } else if ((this.computer.rock === true && this.player1.scissors === true) || (this.computer.scissors === true && this.player1.paper === true) || (this.computer.paper === true && this.player1.rock === true)) {
       this.computer.wins++
