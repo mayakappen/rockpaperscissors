@@ -26,7 +26,7 @@ class Game {
         }
       }
   }
-  shoot() {
+  shootNormal() {
     if (this.player1.rock === false && this.player1.paper === false && this.player1.scissors === false) {
       this.computer.wins++
       playerHand.innerHTML = playerImages[3]
@@ -39,12 +39,11 @@ class Game {
   } else if ((this.player1.rock === true && this.computer.scissors === true) || (this.player1.scissors === true && this.computer.paper === true) || (this.player1.paper === true && this.computer.rock === true)) {
       this.player1.wins++
       return 'You Win!'
-
   }
 }
-  newGame() {
+  newGameNormal() {
     this.randomFist();
-    displayArea.innerText = this.shoot();
+    resultArea.innerText = this.shootNormal();
     switchViews();
     playerScore.innerText = `Wins: ${this.player1.wins}`
     computerScore.innerText =`Wins: ${this.computer.wins}`

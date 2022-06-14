@@ -6,7 +6,7 @@ var paperButton = document.getElementById('select-paper')
 var scissorsButton = document.getElementById('select-scissors')
 var playerHand = document.getElementById('player-hand')
 var computerHand = document.getElementById('computer-hand')
-var displayArea = document.getElementById('result-text')
+var resultArea = document.getElementById('result-text')
 var selectArea = document.getElementById('display-text')
 var playerScore = document.getElementById('player-wincount')
 var computerScore = document.getElementById('computer-wincount')
@@ -58,11 +58,11 @@ function selection(event) {
 displayPlayer()
 }
 
-function newGame() {
-game.newGame();
+function newNormalGame() {
+game.newGameNormal();
 }
 
-playButton.addEventListener('click', newGame)
+playButton.addEventListener('click', newNormalGame)
 rockButton.addEventListener('click', selection)
 paperButton.addEventListener('click', selection)
 scissorsButton.addEventListener('click', selection)
