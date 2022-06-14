@@ -16,7 +16,7 @@ var playerScore = document.getElementById('player-wincount')
 var computerScore = document.getElementById('computer-wincount')
 var playerInfo = document.getElementById('player-info')
 var computerInfo = document.getElementById('computer-info')
-var game = new Game
+var game = new Game(['rock', 'paper', 'scissors'])
 
 playerInfo.innerText = game.player1.name + " " + game.player1.token
 computerInfo.innerText = game.computer.name + " " + game.computer.token
@@ -83,15 +83,13 @@ function selection(event) {
 displayPlayer()
 }
 
-function newNormalGame() {
-game.newGameNormal();
+
+
+function newGame() {
+  game.newGame();
 }
 
-function newExtraGame() {
-  game.newGameExtra();
-}
-
-playButton.addEventListener('click', newExtraGame)
+playButton.addEventListener('click', newGame)
 //playExtraButton.addEventListener('click', newExtraGame)
 rockButton.addEventListener('click', selection)
 paperButton.addEventListener('click', selection)
