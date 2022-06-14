@@ -13,6 +13,9 @@ var playerInfo = document.getElementById('player-info')
 var computerInfo = document.getElementById('computer-info')
 var game = new Game
 
+playerInfo.innerText = game.player1.name + " " + game.player1.token
+computerInfo.innerText = game.computer.name + " " + game.computer.token
+
 
 var playerImages = ['<img src="https://user-images.githubusercontent.com/102932448/173165388-7a044f50-061d-4825-bfa6-5cc643998362.png" alt="playerRock" width="100" height="100">',
                     '<img src="https://user-images.githubusercontent.com/102932448/173165403-4c91229e-49de-4c71-a384-6466e1f5d163.png" alt="playerScissors" width="100" height="100">',
