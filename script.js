@@ -59,13 +59,7 @@ displayPlayer()
 }
 
 function newGame() {
-game.randomFist();
-displayArea.innerText = game.shoot();
-switchViews();
-playerScore.innerText = `Wins: ${game.player1.wins}`
-computerScore.innerText =`Wins: ${game.computer.wins}`
-window.setTimeout(switchViews, 2500)
-game.player1.selectEmpty();
+game.newGame();
 }
 
 playButton.addEventListener('click', newGame)

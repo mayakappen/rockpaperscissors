@@ -39,6 +39,17 @@ class Game {
   } else if ((this.player1.rock === true && this.computer.scissors === true) || (this.player1.scissors === true && this.computer.paper === true) || (this.player1.paper === true && this.computer.rock === true)) {
       this.player1.wins++
       return 'You Win!'
+
   }
+}
+  newGame() {
+    this.randomFist();
+    displayArea.innerText = this.shoot();
+    switchViews();
+    playerScore.innerText = `Wins: ${this.player1.wins}`
+    computerScore.innerText =`Wins: ${this.computer.wins}`
+    window.setTimeout(switchViews, 2500)
+    this.player1.selectEmpty();
   }
+
 }
