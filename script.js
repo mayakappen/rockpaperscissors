@@ -1,6 +1,7 @@
 var display = document.querySelector('.view-display')
 var viewWinner = document.querySelector('.view-winner')
 var playButton = document.getElementById('play')
+var playExtraButton = document.getElementById('play-extra')
 var rockButton = document.getElementById('select-rock')
 var paperButton = document.getElementById('select-paper')
 var scissorsButton = document.getElementById('select-scissors')
@@ -66,7 +67,12 @@ function newNormalGame() {
 game.newGameNormal();
 }
 
+function newExtraGame() {
+  game.newGameExtra();
+}
+
 playButton.addEventListener('click', newNormalGame)
+playButton.addEventListener('click', newExtraGame)
 rockButton.addEventListener('click', selection)
 paperButton.addEventListener('click', selection)
 scissorsButton.addEventListener('click', selection)

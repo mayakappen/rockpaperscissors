@@ -118,7 +118,7 @@ body {
 }
 
 
-#play {
+.play {
 	font-family: 'Varela Round', sans-serif;
 	margin-top: 10vh;
 	margin-left: 10vw;
@@ -130,7 +130,7 @@ body {
 	border-radius: 4vw;
 }
 
-#play:hover {
+.play:hover {
 	cursor: pointer;
 	background-color: #55BCC9 ;
 	border-color: #55BCC9;
