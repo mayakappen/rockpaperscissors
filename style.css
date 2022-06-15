@@ -19,7 +19,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-content: space-between;
+	align-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -45,16 +45,15 @@ body {
 	width: auto;
 	background-color: #97CAEF;
 	border-radius: 4vw;
-
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	margin-left: 4vw;
 	padding: 1vh;
 }
+
 
 .smallWrapper {
 	height: 10vh;
@@ -88,7 +87,7 @@ body {
 }
 
 .result {
-	background-color: #CAFAFE;
+	background-color: #97CAEF;
 	height: 50vh;
 	width: 70vh;
 	margin-top: 4vh;
@@ -100,7 +99,6 @@ body {
 	align-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-left: 4vw;
 }
 
 .wincount-text {
@@ -230,11 +228,11 @@ cursor: pointer;
 height: 16vh;
 width: auto;
 }
+
 #display-text {
 	margin-left: 7vw;
 	margin-bottom: 3vh;
 	align-self: center;
-
 }
 
 #subheading{
@@ -257,13 +255,13 @@ width: auto;
 }
 
 #display-text {
-	margin-left: 15vw;
+	margin-left: 10vw;
 	margin-bottom: 3vh;
 	align-self: center;
 }
 
 #result-text {
-	margin-left: 15vw;
+	margin-left: 10vw;
 	margin-bottom: 3vh;
 	align-self: center;
 }

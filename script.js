@@ -44,12 +44,9 @@ var computerImages = ['<img src="https://user-images.githubusercontent.com/10293
 function seeWinner() {
   display.classList.toggle('hidden');
   viewWinner.classList.toggle('hidden');
+  selectArea.innerText = ''
 }
 
-function seeWinnerExtra() {
-  displayExtra.classList.toggle('hidden')
-  viewWinner.classList.toggle('hidden')
-}
 
 function displayPlayer() {
   if (game.player1.rock === true) {
