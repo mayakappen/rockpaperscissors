@@ -7,7 +7,9 @@ This repo is for a basic webpage that allows the user to play a game of rock pap
 
 <li>
  -Rock > Scissors
+ 
  -Paper > Rock
+ 
  -Scissors > Paper
 </li>
 
@@ -15,9 +17,13 @@ This repo is for a basic webpage that allows the user to play a game of rock pap
 
 <li>
 -Rock > Scissors & Gnar
+ 
 -Paper > Rock & Peace
+ 
 -Scissors > Paper & Gnar
+ 
 -Peace > Scissors & Rock
+ 
 -Gnar > Paper & Peace
 </li>
 
