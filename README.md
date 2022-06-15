@@ -6,19 +6,19 @@ This repo is for a basic webpage that allows the user to play a game of rock pap
 <h3>Classic Ruleset</h3>
 
 <li>
- Rock > Scissors
- Paper > Rock
- Scissors > Paper
+ -Rock > Scissors
+ -Paper > Rock
+ -Scissors > Paper
 </li>
 
 <h3>Spicy🌶️ Ruleset:</h3>
 
 <li>
-Rock > Scissors & Gnar
-Paper > Rock & Peace
-Scissors > Paper & Gnar
-Peace > Scissors & Rock
-Gnar > Paper & Peace
+-Rock > Scissors & Gnar
+-Paper > Rock & Peace
+-Scissors > Paper & Gnar
+-Peace > Scissors & Rock
+-Gnar > Paper & Peace
 </li>
 
 <h3>Conventions</h3>
