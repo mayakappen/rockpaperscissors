@@ -90,13 +90,12 @@ body {
 	background-color: #97CAEF;
 	height: 50vh;
 	width: 70vh;
-	margin-top: 4vh;
 	border-radius: 5vw;
 	align-self: center;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
-	align-content: space-around;
+	align-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -157,16 +156,20 @@ body {
 
 
 #player-hand {
-	height: 40px;
-	width: auto;
-	margin-top: 2vh;
+height: 5vh;
+width: auto;
+align-self: flex-start;
+padding-top: 10vh;
+padding-right:2vw;
+
 }
 
 #computer-hand {
-height: 40px;
+height: 5vh;
 width: auto;
-margin-top: 2vh;
-
+align-self: flex-end;
+padding-top: 10vh;
+padding-left: 2vw;
 }
 
 #select-rock {
