@@ -30,11 +30,13 @@ This repo is for a basic webpage that allows the user to play a game of rock pap
 Branches will be named following the convention of type/feature
 Commits will be in imperative tone
 Pull requests will look something like this:
-<li>
-Added button for spicy game
-Fixed margins on displayText
-Added flexbox for buttonWrapper
-</li>
+
+-Added button for spicy game
+
+-Fixed margins on displayText
+
+-Added flexbox for buttonWrapper
+
 
 <h3>Screens:</h3>
 
