@@ -3,7 +3,7 @@
 <h3>About:</h3>
 This repo is for a basic webpage that allows the user to play a game of rock paper scissors against an AI. Wins are tallied on the left side for people and the right side for the computer. There are several game modes ("Classic" and "Spicy"). Classic is a regular game of Rock, Paper, Scissors while Spicy has its own rule set.
 
-<h3>Classic Ruleset</h3>
+<h3>Classic Ruleset:</h3>
 
  -Rock > Scissors
  
@@ -24,7 +24,7 @@ This repo is for a basic webpage that allows the user to play a game of rock pap
 -Gnar > Paper & Peace
 
 
-<h3>Conventions</h3>
+<h3>Conventions:</h3>
 
 
 Branches will be named following the convention of type/feature
