@@ -93,14 +93,16 @@ function switchView() {
 }
 
 function normalGame() {
+peaceButton.classList.add('hidden')
+hangButton.classList.add('hidden')
 game.toggleGameMode('normal')
 switchView()
 }
 
 function spicyGame() {
 switchView()
-peaceButton.classList.toggle('hidden')
-hangButton.classList.toggle('hidden')
+peaceButton.classList.remove('hidden')
+hangButton.classList.remove('hidden')
 game.toggleGameMode('spicy')
 }
 
