@@ -40,13 +40,15 @@ Pull requests will look something like this:
 
 <h3>Screens:</h3>
 
-![Screen Shot 2022-06-14 at 6 09 44 PM](https://user-images.githubusercontent.com/102932448/173709717-22f0fa7a-58fd-4711-bca7-21408dafc03b.png)
+![Screen Shot 2022-06-14 at 8 34 05 PM](https://user-images.githubusercontent.com/102932448/173724338-55634f60-d5ce-4f50-93ac-4bd01e105d61.png)
 
-![Screen Shot 2022-06-14 at 6 20 47 PM](https://user-images.githubusercontent.com/102932448/173710720-d17a751c-6f2d-4c3b-b8ae-ff322caed3b2.png)
+![Screen Shot 2022-06-14 at 8 34 38 PM](https://user-images.githubusercontent.com/102932448/173724412-0373bd7b-aba2-4da1-9853-a59f2d54aa2e.png)
 
-![Screen Shot 2022-06-14 at 6 21 43 PM](https://user-images.githubusercontent.com/102932448/173710766-0241ba0e-13bd-4519-a257-9c4c4c173077.png)
+![Screen Shot 2022-06-14 at 8 35 27 PM](https://user-images.githubusercontent.com/102932448/173724515-a38b5b05-9fff-4f4a-b280-97c5ffe691d8.png)
 
-![Screen Shot 2022-06-14 at 6 22 29 PM](https://user-images.githubusercontent.com/102932448/173710828-f5644608-e057-4a00-bb0a-3c7bc03f7c18.png)
+![Screen Shot 2022-06-14 at 8 35 05 PM](https://user-images.githubusercontent.com/102932448/173724475-c4f45c32-bbc4-402e-83b9-7c7b07911dd8.png)
+
+
 
 
 <h3>Reflections:</h3>
