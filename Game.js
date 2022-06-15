@@ -1,6 +1,3 @@
-// var Player = require('./Player.js')
-// var player1 = require('./script.js')
-// var computer = require('./script.js')
 class Game {
   constructor() {
     this.player1 = new Player('human', '😂')
@@ -57,7 +54,7 @@ class Game {
     if (mode === 'spicy') {
       this.mode = ['rock', 'paper', 'scissors', 'peace', 'hang']
   } else if (mode === 'normal') {
-    this.mode = ['rock', 'paper', 'scissors']
+      this.mode = ['rock', 'paper', 'scissors']
     }
   }
 }
